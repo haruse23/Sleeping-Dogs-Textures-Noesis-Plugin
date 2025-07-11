@@ -20,7 +20,7 @@ def checkType(data):
 def readCString(bs):
     chars = []
     while True:
-        b = bs.readUByte()  # Use readUByte to ensure unsigned byte (0–255)
+        b = bs.readUByte()
         if b == 0:
             break
         chars.append(b)
